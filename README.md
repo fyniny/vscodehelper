@@ -2,14 +2,17 @@
 vscode go语言插件 linux版本全家桶
 
 # 使用说明
-----
 
 # 解压之后丢在gopath路径之下
-> src文件太大，故采用分卷压缩形式上传，解压
-> 解压gz分卷
-> cat src.tar.gz* | tar zx
-> tar -C ${path} -zvf src.tar.gz
+> src文件太大，故采用分卷压缩形式上传，解压如下
 
+```shell 
+# 解压gz分卷
+
+cat src.tar.gz* | tar zx
+
+tar -C ${path} -zvf src.tar.gz
+```
 **若需要重新编译，拷贝src目录到gopath路径下，执行**
 ```
 go install github.com/ramya-rao-a/go-outline
@@ -33,7 +36,7 @@ go install github.com/derekparker/delve/cmd/dlv
 	cp $GOPATH/bin/gocode $GOPATH/bin/gocode-gomod
 ```
 
-***若想要更新最新（需要自行解决墙的问题***
+***若想要更新最新（需要自行解决墙的问题)***
 ```
 go get -u -v github.com/ramya-rao-a/go-outline
 go get -u -v github.com/acroca/go-symbols
